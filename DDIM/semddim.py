@@ -168,7 +168,7 @@ def getSet(filenames):
 #=========******************
 #DIFF
 dataset_repetitions = 5
-num_epochs = 1  # train for at least 50 epochs for good results
+num_epochs = 50  # train for at least 50 epochs for good results
 image_size = 512
 # KID = Kernel Inception Distance, see related section
 kid_image_size = 286
