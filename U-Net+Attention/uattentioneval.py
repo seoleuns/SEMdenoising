@@ -350,15 +350,15 @@ model.summary()
 
 model.load_weights(f'./checkpoints/ckpt_epochs_{numepochs}').expect_partial()
 
-full_target_test = renormal_load_image_from_dir('/home/seoleuns/data/Clean')
-full_train_test = renormal_load_image_from_dir('/home/seoleuns/data/Noisy')
+full_target_test = renormal_load_image_from_dir('Line/Clean')
+full_noisy_test = renormal_load_image_from_dir('Line/Noisy')
 psnrsk=[]
 ssim=[]
 rmse=[]
 fsim=[]
 uiq=[]
 i=0
-for testimage,  testimage2 in zip(full_train_test, full_target_test):
+for testimage,  testimage2 in zip(full_noisy_test, full_target_test):
     testimage = np.expand_dims(testimage, axis=0)
     testimage2 = np.expand_dims(testimage2, axis=0)
     generatedimg = model(testimage, training=False, mask=None)
