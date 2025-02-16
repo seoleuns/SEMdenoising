@@ -1,6 +1,4 @@
 # SEMdenoising
+Our paper is published and can be found here: https://iopscience.iop.org/article/10.1088/1361-6501/ad7e41/meta 
 
-A related paper has been just submitted and I will update codes after revision.
-
-After revision, files are added.
 If you have any questions, please contact: seoleuns@kriss.re.kr
