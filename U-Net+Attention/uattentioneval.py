@@ -350,8 +350,8 @@ model.summary()
 
 model.load_weights(f'./checkpoints/ckpt_epochs_{numepochs}').expect_partial()
 
-full_target_test = renormal_load_image_from_dir('Line/Clean')
-full_noisy_test = renormal_load_image_from_dir('Line/Noisy')
+full_target_test = renormal_load_image_from_dir('../Data/Line/Clean')
+full_noisy_test = renormal_load_image_from_dir('../Data/Line/Noisy')
 psnrsk=[]
 ssim=[]
 rmse=[]
