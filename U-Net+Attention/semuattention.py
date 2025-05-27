@@ -173,10 +173,10 @@ if True:
 
 # load dataset
 images_per_image = 8
-full_target = renormal_load_image_from_dir('../data/time/high')
-full_train = renormal_load_image_from_dir('../data/time/low')
-full_target_test = renormal_load_image_from_dir('../data/time/hightest')
-full_train_test = renormal_load_image_from_dir('../data/time/lowtest')
+full_target = renormal_load_image_from_dir('../Data/time/high')
+full_train = renormal_load_image_from_dir('../Data/time/low')
+full_target_test = renormal_load_image_from_dir('../Data/time/hightest')
+full_train_test = renormal_load_image_from_dir('../Data/time/lowtest')
 train_set  = augment_pipeline(pipeline*images_per_image, full_train.reshape(-1,target_height,target_width,1))
 target_set = augment_pipeline(pipeline*images_per_image, full_target.reshape(-1,target_height,target_width,1))
 test_set  = augment_pipeline(pipeline, full_train_test.reshape(-1,target_height,target_width,1))
