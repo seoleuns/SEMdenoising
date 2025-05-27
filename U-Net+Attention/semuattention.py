@@ -173,10 +173,10 @@ if True:
 
 # load dataset
 images_per_image = 8
-full_target = renormal_load_image_from_dir('/scratch/r874a01/x2521a01/Scratch/data/time/high')
-full_train = renormal_load_image_from_dir('/scratch/r874a01/x2521a01/Scratch/data/time/low')
-full_target_test = renormal_load_image_from_dir('/scratch/r874a01/x2521a01/Scratch/data/time/hightest')
-full_train_test = renormal_load_image_from_dir('/scratch/r874a01/x2521a01/Scratch/data/time/lowtest')
+full_target = renormal_load_image_from_dir('../data/time/high')
+full_train = renormal_load_image_from_dir('../data/time/low')
+full_target_test = renormal_load_image_from_dir('../data/time/hightest')
+full_train_test = renormal_load_image_from_dir('../data/time/lowtest')
 train_set  = augment_pipeline(pipeline*images_per_image, full_train.reshape(-1,target_height,target_width,1))
 target_set = augment_pipeline(pipeline*images_per_image, full_target.reshape(-1,target_height,target_width,1))
 test_set  = augment_pipeline(pipeline, full_train_test.reshape(-1,target_height,target_width,1))
@@ -373,8 +373,8 @@ Y_test_np = Y_test
 model.fit(X_train_np, Y_train_np, validation_split=0.1, epochs=numepochs, batch_size=8)
 model.save_weights(f'./checkpoints/ckpt_epochs_{numepochs}')
 
-full_target_test = renormal_load_image_from_dir('/scratch/r874a01/x2521a01/Scratch/data/time/hightest')
-full_train_test = renormal_load_image_from_dir('/scratch/r874a01/x2521a01/Scratch/data/time/lowtest')
+full_target_test = renormal_load_image_from_dir('../data/time/hightest')
+full_train_test = renormal_load_image_from_dir('../data/time/lowtest')
 i=0
 for testimage,  testimage2 in zip(full_train_test, full_target_test):
     testimage = np.expand_dims(testimage, axis=0)
