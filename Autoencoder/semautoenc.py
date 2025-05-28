@@ -173,8 +173,8 @@ def augment_pipeline(pipeline, images, seed=5):
 # In[19]:
 
 
-full_train  = renormal_load_image_from_dir('Data/train')
-full_target = renormal_load_image_from_dir('Data/train_cleaned')
+full_train  = renormal_load_image_from_dir('Data/time/low')
+full_target = renormal_load_image_from_dir('Data/time/high')
 
 
 # In[20]:
