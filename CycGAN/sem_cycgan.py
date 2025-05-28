@@ -86,9 +86,9 @@ target_height = 416
 np.random.seed(456)
 
 
-img_path='./Data/time'
+img_path='../Data/time/high'
 file_list = glob.glob(img_path+'/30us*.tif')
-img_path='./Data/time'
+img_path='../Data/time/low'
 gile_list = glob.glob(img_path+'/100ns*.tif')
 print(len(file_list))
 print(len(gile_list))
