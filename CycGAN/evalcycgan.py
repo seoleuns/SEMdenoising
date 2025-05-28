@@ -406,8 +406,8 @@ rmse=[]
 fsim=[]
 uiq=[]
 i = 0
-file_list1  = renormal_load_image_from_dir2('./Data/Noisy')
-file_list2  = renormal_load_image_from_dir2('./Data/Clean')
+file_list1  = renormal_load_image_from_dir2('../Data/Line/Noisy')
+file_list2  = renormal_load_image_from_dir2('../Data/Line/Clean')
 for file1, file2 in zip(file_list1, file_list2):
     X_test1_fig  = (file1.reshape(-1, target_height,target_width,3)*127.5 + 127.5).astype(np.uint8)
     file1  = (file1.reshape(1, target_height,target_width,3))
