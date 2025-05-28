@@ -107,7 +107,7 @@ def gen_patches(file_name):
 if __name__ == '__main__':
     # parameters
     save_dir = 'Data/npy_data/'
-    file_list = load_image_from_dir('../Data/train_cleaned')
+    file_list = load_image_from_dir('../Data/Time/low')
     num_threads = 16
     num_threads = 1
     nfile1=len(file_list)
@@ -287,8 +287,8 @@ def test(model):
     ssim = []
     import glob
     file_list=[]
-    filelist = renormal_load_image_from_dir('../Data/Line')
-    filelist2 = renormal_load_image_from_dir('../Data/Line/')
+    filelist = renormal_load_image_from_dir('../Data/Line/Clean')
+    filelist2 = renormal_load_image_from_dir('../Data/Line/Noisy')
     for file in filelist:
         file=file.replace("\\", "/")
         file_list.append(file)
