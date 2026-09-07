@@ -37,8 +37,7 @@ All files in this repository, including the TIFF images under `Data/`, are cover
 
 If you use this dataset, please cite:
 
-S Shin, IH Lee, BC Park, JH Song: Applications of deep learning-based denoising methodologies for scanning electron microscope images
- - Measurement Science and Technology, 2025
+S Shin, IH Lee, BC Park, JH Song: Applications of deep learning-based denoising methodologies for scanning electron microscope images, Measurement Science and Technology, 2025
 [DOI 10.1088/1361-6501/ad7e41]
 
 and link to this repository.
